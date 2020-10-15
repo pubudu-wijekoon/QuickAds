@@ -1,0 +1,119 @@
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #c5d6dad8;
+  padding: 25px;
+}
+
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  min-height: 200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+
+.desc-ul {
+  list-style-type: none;
+}
+.desc-ul li::before {
+  content: "›"; /* Insert content that looks like bullets */
+  margin-left: -40px;
+  padding-right: 10px;
+  color: blue; /* Or a color you prefer */
+}
+
+/* model */
+.list-group a {
+  text-decoration: none;
+  color: #000;
+}
+.list-group li a::before {
+  content: url(/photos/phone.svg); /* Insert content that looks like bullets */
+  margin-left: -10px;
+  padding-right: 10px;
+  color: rgb(0, 0, 0); /* Or a color you prefer */
+}
+
+/*rating */
+.rating-heading .fa {
+  font-size: 100px !important;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  margin-top: 10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {
+  width: 60%;
+  height: 18px;
+  background-color: #4caf50;
+}
+.bar-4 {
+  width: 30%;
+  height: 18px;
+  background-color: #4caf50;
+}
+.bar-3 {
+  width: 10%;
+  height: 18px;
+  background-color: #4caf50;
+}
+.bar-2 {
+  width: 4%;
+  height: 18px;
+  background-color: #4caf50;
+}
+.bar-1 {
+  width: 15%;
+  height: 18px;
+  background-color: #4caf50;
+}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side,
+  .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
